@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-width: 100%;
+  vertical-align: baseline;
+  text-align: center;
+  font-size: 62.5%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", serif;
+  max-width: 100%;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Roboto", serif;
+  background-color: #2f2f31;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", serif;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+.navbar {
+  align-items: center;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  padding: 0 3%;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+}
+
+.sight-toggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: #f68819;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+.colorblind-mode {
+  color: rebeccapurple;
+  background-color: #313843;
+}
+/*
+nav {
+  margin: 0.1%;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: #990000;
+}
+
+.top h1 a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0.1rem 0.1rem #990000;
+}
+
+@media (max-width: 500px) {
+  .top h1 a {
+    font-size: 2rem;
+  }
+}
+
+h6 {
+  font-size: 0.2rem;
+}
+
+.Blog {
+  background-color: #990000;
+  border-top: 0.3rem solid black;
+  padding-top: 0.5rem;
+  border-bottom: 0.3rem solid black;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff8f0;
+  text-shadow: 0.1rem 0.1rem #53131e;
+}
+
+.Symphinity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5rem;
+}
+
+.Text {
+  width: 80%;
+}
+
+.Lesson {
+  font-size: 2rem;
+  color: #e48400;
+  text-shadow: 0.05rem 0.05rem #fff8f0;
+}
+
+@media (max-width: 1400px) {
+  .Symphinity {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .Symphinity {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Symphinity .Lesson {
+    font-size: 1.2rem;
+  }
+}
+
+.Media {
+  padding-top: 1rem;
+  background-color: #990000;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+  .Media h2 {
+    font-size: 1.9rem;
+  }
+}
+
+.Social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Social a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 0.05rem 0.05rem #fff8f0;
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+@media (max-width: 1400px) {
+  .Social a {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .Social div {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .Social {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .Social {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .Social a {
+    padding: -3rem;
+    font-size: 2.3rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.Icons {
+  display: none;
+}
+
+.Icons div a span {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .Icons {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .Icons div {
+    max-width: 100%;
+    width: 50%;
+    margin: 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Icons a {
+    max-width: 100%;
+    font-size: 3rem;
+    padding: 1px;
+    margin: 0;
+  }
+}
+
+address {
+  font-size: 1rem;
+  padding-top: 5rem;
+  background-image: linear-gradient(#990000, #2f2f31);
+}
+
+address a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1400px) {
+  address a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  address a {
+    font-size: 1.2rem;
+  }
+}
+*/
