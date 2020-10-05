@@ -46,7 +46,7 @@ export default function About() {
       <br />
       <Typography variant="body1">
         <Link
-          href="https://docs.google.com/document/d/1wsxJgqMLtkQ-FN3zoMStTnE_qGxMPUNMV0cnQEa8nJ4/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1RfAIBnM0tUzac6CJD_CH7ng58T59nkg5JWjr787WJoo/edit?usp=sharing"
           color="primary"
           variant="h6"
           target="_blank"
