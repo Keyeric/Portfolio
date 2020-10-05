@@ -40,8 +40,8 @@ export default function About() {
       </Typography>
       <br />
       <Typography variant="body1">
-        I am Lambda School graduate, currently focused on improving my skills and working
-        with freelance clients
+        I am a Lambda School graduate, currently focused on improving my skills and working
+        with freelance clients.
       </Typography>
       <br />
       <Typography variant="body1">
