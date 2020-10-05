@@ -40,8 +40,8 @@ export default function About() {
       </Typography>
       <br />
       <Typography variant="body1">
-        I am currently enrolled in Lambda School improving my skills and working
-        on many projects for my portfolio.
+        I am Lambda School graduate, currently focused on improving my skills and working
+        with freelance clients
       </Typography>
       <br />
       <Typography variant="body1">
@@ -53,6 +53,18 @@ export default function About() {
           rel="noopener noreferrer"
         >
           Link to my Resume
+        </Link>
+      </Typography>
+      <br />
+      <Typography variant="body1">
+        <Link
+          href="https://www.youracclaim.com/badges/ad205c7c-4ca9-49f1-bd60-66633f007224/public_url"
+          color="primary"
+          variant="h6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link to my Graduation Certificate
         </Link>
       </Typography>
     </section>
